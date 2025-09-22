@@ -46,12 +46,5 @@ From the project root:
 ```
 APK output: `app/build/outputs/apk/debug/app-debug.apk`.
 
-## Suggested Next Steps
-- Add navigation from cards to list/detail screens (e.g., `RecyclerView`)
-- Implement add/edit/delete bucket items
-- Persist data with Room or DataStore
-- Apply Material 3 theming and dark mode
-- Add instrumented and UI tests
-
 ## License
-Add a license (e.g., MIT) if you plan to share or distribute.
+Open source
