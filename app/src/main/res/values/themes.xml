@@ -1,9 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BucketList" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.BucketList" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="colorPrimary">@color/toolbar_background</item>
+        <item name="colorOnPrimary">@color/toolbar_on_background</item>
+        <item name="actionBarStyle">@style/Widget.BucketList.ActionBar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.BucketList.ActionBar</item>
     </style>
 
     <style name="Theme.BucketList" parent="Base.Theme.BucketList" />
+
+    <style name="Widget.BucketList.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/toolbar_background</item>
+        <item name="titleTextStyle">@style/TextAppearance.BucketList.ActionBar.Title</item>
+    </style>
+
+    <style name="ThemeOverlay.BucketList.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/toolbar_on_background</item>
+        <item name="android:textColorPrimary">@color/toolbar_on_background</item>
+    </style>
+
+    <style name="TextAppearance.BucketList.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/toolbar_on_background</item>
+    </style>
 </resources>
